@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Alex Morgan, a front-end developer specializing in accessible and responsive websites.">
+    <meta name="keywords" content="portfolio, front-end developer, web developer, accessible websites">
+    <meta name="author" content="Alex Morgan">
+    <title>Alex Morgan | Front-End Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content">Skip to main content</a>
+
+    <header>
+        <h1>Alex Morgan</h1>
+        <p>Front-End Developer</p>
+        <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+            Menu
+        </button>
+        <nav id="primary-navigation" aria-label="Primary navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>
+                I am a front-end developer who creates clear, responsive, and accessible
+                digital experiences. I enjoy turning ideas into useful and polished websites.
+            </p>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+
+            <div class="project-filters" aria-label="Filter projects">
+                <button type="button" data-category="all" aria-pressed="true">All</button>
+                <button type="button" data-category="accessibility" aria-pressed="false">Accessibility</button>
+                <button type="button" data-category="javascript" aria-pressed="false">JavaScript</button>
+            </div>
+
+            <article class="project" data-category="accessibility" aria-labelledby="project-one-heading">
+                <h3 id="project-one-heading">Accessible Resource Library</h3>
+                <p>A searchable collection of learning resources built with semantic HTML and responsive styles.</p>
+                <a href="#" aria-label="View Accessible Resource Library project">View project</a>
+            </article>
+
+            <article class="project" data-category="javascript" aria-labelledby="project-two-heading">
+                <h3 id="project-two-heading">Local Weather Dashboard</h3>
+                <p>A clean dashboard that displays forecasts and important weather information.</p>
+                <a href="#" aria-label="View Local Weather Dashboard project">View project</a>
+            </article>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Accessibility</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <form id="contact-form" action="#" method="post" novalidate>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+
+                <button type="submit">Send Message</button>
+                <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alex Morgan. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
