@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
+  <title id="title">Local weather dashboard</title>
+  <desc id="description">A sunny weather dashboard with the current temperature and forecast cards.</desc>
+  <rect width="640" height="360" rx="28" fill="#e9f6ff"/>
+  <circle cx="470" cy="110" r="54" fill="#ffc857"/>
+  <g stroke="#ffc857" stroke-width="8" stroke-linecap="round">
+    <path d="M470 29V15M470 205v-14M389 110h-14M565 110h-14M413 53l-10-10M537 177l-10-10M527 53l10-10M403 177l10-10"/>
+  </g>
+  <rect x="76" y="46" width="488" height="268" rx="22" fill="#fff" stroke="#cfe2f1" stroke-width="3"/>
+  <text x="112" y="99" fill="#52606d" font-family="Arial, sans-serif" font-size="18">TODAY · LOCAL FORECAST</text>
+  <text x="112" y="177" fill="#1f2933" font-family="Arial, sans-serif" font-size="64" font-weight="700">24°</text>
+  <text x="114" y="207" fill="#52606d" font-family="Arial, sans-serif" font-size="18">Mostly sunny</text>
+  <path d="M252 165a30 30 0 0 1 58-10 24 24 0 0 1 8 47h-66a19 19 0 0 1 0-37z" fill="#78a0ff"/>
+  <rect x="108" y="238" width="424" height="48" rx="12" fill="#f3f7fc"/>
+  <g fill="#52606d" font-family="Arial, sans-serif" font-size="15" text-anchor="middle">
+    <text x="160" y="258">MON</text><text x="266" y="258">TUE</text><text x="372" y="258">WED</text><text x="478" y="258">THU</text>
+  </g>
+  <g fill="#254eda" font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+    <text x="160" y="278">24°</text><text x="266" y="278">22°</text><text x="372" y="278">25°</text><text x="478" y="278">23°</text>
+  </g>
+</svg>
